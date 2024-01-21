@@ -27,13 +27,19 @@ public class HelloController {
     private Button restart;
 
     @FXML
-    private Label tippeltszamlabel;
+    private Button tipButton;
+
+    @FXML
+    private Button startButton;
+
+    @FXML
+    private Label tipNumberlabel;
 
     @FXML
     private Label rangeLabel;
 
     @FXML
-    private VBox jatekvbox;
+    private VBox gamevbox;
 
     @FXML
     private VBox startvbox;
@@ -41,8 +47,9 @@ public class HelloController {
     @FXML
     private Label errorLabel;
 
-    private int keresettszam;
-    int elozolegTippeltSzam;
+    private int numToSearch;
+    int lastTipNumber;
+
 
 
     @FXML
@@ -50,7 +57,7 @@ public class HelloController {
         try {
             int minimum = Integer.parseInt(minNum.getText());
             int maximum = Integer.parseInt(maxNum.getText());
-            keresettszam = rnd.nextInt(maximum - minimum + 1) + minimum;
+            numToSearch = rnd.nextInt(maximum - minimum + 1) + minimum;
             if(minimum >= maximum)
             {
                 errorLabel.setText("a minimum nem lehet nagyobb mint a maximum!");
@@ -64,52 +71,56 @@ public class HelloController {
         startvbox.setVisible(false);
         startvbox.setManaged(false);
         rangeLabel.setText("Tippelj egy számot " + minNum.getText() + " és " + maxNum.getText() + " között");
-        jatekvbox.setVisible(true);
-
+        gamevbox.setVisible(true);
+        startButton.setDefaultButton(false);
+        tipButton.setDefaultButton(true);
     }
 
     @FXML
-    protected void szamteszt(){
-        int tippeltSzam;
+    protected void testNum(){
+        int tipNumber;
         try
         {
-            tippeltSzam = Integer.parseInt(nameField.getText());
+            tipNumber = Integer.parseInt(nameField.getText());
         }catch (Exception e)
         {
             massageLabel.setText("Adj meg érvényes számot!");
             return;
         }
-        if (keresettszam > tippeltSzam)
+        if (numToSearch > tipNumber)
         {
             massageLabel.setText("^Nagyobb a keresett szám!^");
-        } else if (keresettszam < tippeltSzam) {
+        } else if (numToSearch < tipNumber) {
             massageLabel.setText("ˇKissebb a keresett szám!ˇ");
         } else {
             massageLabel.setText("Eltaláltad a számot!");
             massageLabel.setTextFill(Color.GREEN);
-            tippeltszamlabel.setVisible(false);
-            tippeltSzam = 0;
+            tipNumberlabel.setVisible(false);
+            tipNumber = 0;
             restart.setVisible(true);
         }
 
-        tippeltszamlabel.setText("Előző tippelt számod: " + elozolegTippeltSzam);
-        if (tippeltSzam == 0){
-            elozolegTippeltSzam = tippeltSzam;
+        tipNumberlabel.setText("Előző tippelt számod: " + lastTipNumber);
+        nameField.setText("");
+        nameField.requestFocus();
+        if (tipNumber == 0){
+            lastTipNumber = tipNumber;
         } else {
-            elozolegTippeltSzam = tippeltSzam;
-            tippeltszamlabel.setVisible(true);
+            lastTipNumber = tipNumber;
+            tipNumberlabel.setVisible(true);
         }
     }
 
-    public void restarszam(){
+    public void resetNumber(){
         massageLabel.setText("");
         massageLabel.setTextFill(Color.RED);
         nameField.clear();
         startvbox.setVisible(true);
         startvbox.setManaged(true);
         errorLabel.setText("");
-        jatekvbox.setVisible(false);
-        //keresettszam = rnd.nextInt(50) + 1;
+        gamevbox.setVisible(false);
         restart.setVisible(false);
+        tipButton.setDefaultButton(false);
+        startButton.setDefaultButton(true);
     }
 }

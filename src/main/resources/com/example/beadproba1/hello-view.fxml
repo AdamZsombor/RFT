@@ -8,25 +8,32 @@
 <?import javafx.scene.text.Font?>
 
 <VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beadproba1.HelloController">
+
    <children>
       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="20.0" fx:id="startvbox">
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
+
          <children>
-            <Label text="Minimum szám:">
+            <Label text="Számtippelős játék">
                <font>
                   <Font size="34.0" />
+               </font>
+            </Label>
+            <Label text="Minimum szám:">
+               <font>
+                  <Font size="30.0" />
                </font>
             </Label>
             <TextField fx:id="minNum" />
             <Label text="Maximum szám:">
                <font>
-                  <Font size="34.0" />
+                  <Font size="30.0" />
                </font>
             </Label>
             <TextField fx:id="maxNum" />
-            <Button mnemonicParsing="false" onAction="#startgame" text="Start">
+            <Button fx:id="startButton" defaultButton="true" mnemonicParsing="false" onAction="#startgame" text="Start">
                <font>
                   <Font size="17.0" />
                </font>
@@ -38,10 +45,14 @@
             </Label>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="20.0" visible="false" fx:id="jatekvbox">
+
+
+
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="20.0" visible="false" fx:id="gamevbox">
         <padding>
           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
         </padding>
+
          <children>
             <Label text="Számtippelős játék">
                <font>
@@ -59,17 +70,17 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="tippeltszamlabel" visible="false">
+            <Label fx:id="tipNumberlabel" visible="false">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onAction="#szamteszt" text="Tipp">
+            <Button fx:id="tipButton" mnemonicParsing="false" onAction="#testNum" text="Tipp">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button fx:id="restart" mnemonicParsing="false" onAction="#restarszam" text="Restart" textFill="#4a8242" visible="false">
+            <Button fx:id="restart" mnemonicParsing="false" onAction="#resetNumber" text="Restart" textFill="#4a8242" visible="false">
                <font>
                   <Font size="16.0" />
                </font></Button>
