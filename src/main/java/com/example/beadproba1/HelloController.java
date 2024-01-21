@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
 import java.util.Random;
@@ -17,12 +18,55 @@ public class HelloController {
     private TextField nameField;
 
     @FXML
+    private TextField minNum;
+
+    @FXML
+    private TextField maxNum;
+
+    @FXML
     private Button restart;
 
-    private int keresettszam = rnd.nextInt(50)+1;
     @FXML
     private Label tippeltszamlabel;
+
+    @FXML
+    private Label rangeLabel;
+
+    @FXML
+    private VBox jatekvbox;
+
+    @FXML
+    private VBox startvbox;
+
+    @FXML
+    private Label errorLabel;
+
+    private int keresettszam;
     int elozolegTippeltSzam;
+
+
+    @FXML
+    protected void startgame(){
+        try {
+            int minimum = Integer.parseInt(minNum.getText());
+            int maximum = Integer.parseInt(maxNum.getText());
+            keresettszam = rnd.nextInt(maximum - minimum + 1) + minimum;
+            if(minimum >= maximum)
+            {
+                errorLabel.setText("a minimum nem lehet nagyobb mint a maximum!");
+                return;
+            }
+        }catch (Exception e)
+        {
+            errorLabel.setText("Adj meg érvényes számokat!");
+            return;
+        }
+        startvbox.setVisible(false);
+        startvbox.setManaged(false);
+        rangeLabel.setText("Tippelj egy számot " + minNum.getText() + " és " + maxNum.getText() + " között");
+        jatekvbox.setVisible(true);
+
+    }
 
     @FXML
     protected void szamteszt(){
@@ -61,7 +105,11 @@ public class HelloController {
         massageLabel.setText("");
         massageLabel.setTextFill(Color.RED);
         nameField.clear();
-        keresettszam = rnd.nextInt(50) + 1;
+        startvbox.setVisible(true);
+        startvbox.setManaged(true);
+        errorLabel.setText("");
+        jatekvbox.setVisible(false);
+        //keresettszam = rnd.nextInt(50) + 1;
         restart.setVisible(false);
     }
 }
