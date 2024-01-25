@@ -19,6 +19,7 @@ Funkcionális követelmények:
 Felhasználó által megadott adatok hibátlan működése,
 Java környezeten való működés.
 
+![UML](Screenshot04.JPG)
 
 ## 4. Funkcionális terv
 ### 4.1 Rendszerszereplők:
