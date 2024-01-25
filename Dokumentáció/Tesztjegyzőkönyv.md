@@ -47,7 +47,7 @@
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
 | Teszt #01 | Új kezdőképernyőn lévő haladó játékmód gomb lenyomása | Megjelenik a régi kezdő képernyő | megjelenik az új és a régi kezdőképernyő egyszerre| a gombhoz tartozó metódusban nem rejtettük el a megfelelő vboxot |
-| Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #02 | alapjátékmód végigjátszása | a végigjátszás után a restart lenyomásával választhatunk magunknak új számokat, de az eddigi számok memóriában maradnak | az elvártaknak megfelelően működik | lehetséges hogy inkább a főmenüre lenne logikus átirányítani a felhasználót |
 | Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 
 
