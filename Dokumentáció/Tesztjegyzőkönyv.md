@@ -37,6 +37,7 @@
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
 | Teszt #01 | Menü tesztelése | Kitudom választani a megfelelő játékmódot és az is valósul meg |  Kitudom választani a megfelelő játékmódot és az is valósul meg| Nem tapasztaltam hibát |
 | Teszt #02 | Restart tesztelése | Restart után a főmenübe visz vissza |  Restart után a főmenübe visz vissza| Nem találtam hibát |
+| Teszt #03 | Előző szám helyes kiírása | A tippelt előző számot helyesen írja ki |  Nem írja ki helyesen az előző tippelt számot| javítani kell |
 
 
 **Tesztelő:** Ádám Zsombor
