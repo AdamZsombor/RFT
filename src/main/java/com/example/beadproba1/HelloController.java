@@ -126,8 +126,6 @@ public class HelloController {
             tipNumber = 0;
             restart.setVisible(true);
         }
-
-        tipNumberlabel.setText("Előző tippelt számod: " + lastTipNumber);
         //tipNumberList.setItems(tippek); nem működő feature kódrészlete
         nameField.setText("");
         nameField.requestFocus();
@@ -137,6 +135,7 @@ public class HelloController {
             lastTipNumber = tipNumber;
             tipNumberlabel.setVisible(true);
         }
+        tipNumberlabel.setText("Előző tippelt számod: " + lastTipNumber);
     }
 
     public void resetNumber(){
