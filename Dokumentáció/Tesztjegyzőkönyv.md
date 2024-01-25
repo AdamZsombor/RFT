@@ -31,13 +31,12 @@
 
 **Tesztelő:** Sipos Máté
 
-**Tesztelés dátuma:** 2024.Január.24.
+**Tesztelés dátuma:** 2024.Január.25.
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
-| Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
-| Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #01 | Menü tesztelése | Kitudom választani a megfelelő játékmódot és az is valósul meg |  Kitudom választani a megfelelő játékmódot és az is valósul meg| Nem tapasztaltam hibát |
+| Teszt #02 | Restart tesztelése | Restart után a főmenübe visz vissza |  Restart után a főmenübe visz vissza| Nem találtam hibát |
 
 
 **Tesztelő:** Ádám Zsombor
@@ -57,4 +56,4 @@
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | Teljes szoftver teszt | Minden helyesen hibátlanul működik. |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #01 | Teljes szoftver teszt | Minden helyesen hibátlanul működik. |  Minden helyesen hibátlanul működik.| Nem tapasztaltunk hibát |
