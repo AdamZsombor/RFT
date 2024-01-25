@@ -54,6 +54,14 @@ public class HelloController {
     int lastTipNumber;
 
     @FXML
+    protected void basicgame(){
+        minNum.setText("1");
+        maxNum.setText("100");
+        startgame();
+        selectorvbox.setVisible(false);
+        selectorvbox.setManaged(false);
+    }
+    @FXML
     protected void startgame(){
         try {
             int minimum = Integer.parseInt(minNum.getText());
