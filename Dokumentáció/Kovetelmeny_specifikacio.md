@@ -46,6 +46,16 @@ A felhasználó fel tudja venni a alső és felső határt
 Tudja használni mind a gombot mind az entert a játék kötben.
 A felhasználó kitudja választani a neki kedvező játékmódot. 
 
-## 7. Fogalomtár
+## 7. Követelménylista
+***
+| Modul      | ID         | Név  |v. |  Kifejtés|
+| ------------- |:-------------:| -----:|-|--|
+| Felület   | K1 | Menü |1.1| A felhasználó kitudja választani a játékmódot|
+|Modifikáció | K2 | határértékek megadása  |1.0| A felhasználó fel tudja venni a min és max határt |
+| Felület| K3 | visszajelzés  | 1.0| a rendszer kiírja helyesen, hogy alacsonyabb vagy magasabb a keresett szám |
+| Felület| K4 | Reset  |1.0|A felhasználó újratudja indítani a játékot a neki kedvező paraméterekkel |
+
+
+## 8. Fogalomtár
 ***
 rapid: a lehető leggyorsabban.
