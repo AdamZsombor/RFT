@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.ListView?>
 <VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beadproba1.HelloController">
 
    <children>
@@ -104,6 +105,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <!--<ListView fx:id="tipNumberList" visible="false"/> nem működő feature kódrészlete-->
             <Label fx:id="tipNumberlabel" visible="false">
                <font>
                   <Font size="14.0" />

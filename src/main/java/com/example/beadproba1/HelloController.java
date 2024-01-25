@@ -1,13 +1,18 @@
 package com.example.beadproba1;
 
+import javafx.beans.InvalidationListener;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
-import java.util.Random;
+import java.util.*;
 
 public class HelloController {
     Random rnd = new Random();
@@ -50,8 +55,13 @@ public class HelloController {
     @FXML
     private Label errorLabel;
 
+    @FXML
+    private ListView tipNumberList;
+
     private int numToSearch;
     int lastTipNumber;
+
+    //ObsetvableList<Integer> tippek = FXCollections.observaleList(); nem működő feature kódrészlete
 
     @FXML
     protected void basicgame(){
@@ -118,6 +128,7 @@ public class HelloController {
         }
 
         tipNumberlabel.setText("Előző tippelt számod: " + lastTipNumber);
+        //tipNumberList.setItems(tippek); nem működő feature kódrészlete
         nameField.setText("");
         nameField.requestFocus();
         if (tipNumber == 0){
