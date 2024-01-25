@@ -46,7 +46,7 @@
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #01 | Új kezdőképernyőn lévő haladó játékmód gomb lenyomása | Megjelenik a régi kezdő képernyő | megjelenik az új és a régi kezdőképernyő egyszerre| a gombhoz tartozó metódusban nem rejtettük el a megfelelő vboxot |
 | Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 | Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 
