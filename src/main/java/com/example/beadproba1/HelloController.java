@@ -45,12 +45,13 @@ public class HelloController {
     private VBox startvbox;
 
     @FXML
+    private VBox selectorvbox;
+
+    @FXML
     private Label errorLabel;
 
     private int numToSearch;
     int lastTipNumber;
-
-
 
     @FXML
     protected void startgame(){
@@ -74,6 +75,14 @@ public class HelloController {
         gamevbox.setVisible(true);
         startButton.setDefaultButton(false);
         tipButton.setDefaultButton(true);
+    }
+
+    @FXML
+    protected void settings(){
+        selectorvbox.setVisible(false);
+        selectorvbox.setManaged(false);
+        startvbox.setVisible(true);
+        startvbox.setManaged(true);
     }
 
     @FXML
