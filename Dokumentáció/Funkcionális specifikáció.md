@@ -23,13 +23,17 @@ Egyszerű játék, ha nagy korlátokat állítasz be akkor, hogy a leggyorsabban
 | K4 | 1.0 |A felhasználó újratudja indítani a játékot a neki kedvező paraméterekkel | Reset gomb megjelenítése a jéték végén.|
 
 ## 5. Képernyőterv
-<br>Kezdő ablak:<br>
-
+<br>Haladó játék beállítása ablak:<br>
 ![Képernyőterv](Screenshot01.png)
+<br>Belehet állítani a minimum és maximum tartományt<br>
+
 <br>Játék ablak:<br>
-
 ![Képernyőterv](Screenshot02.png)
+<br>tippelés ablak. A tipp gombot hozzákötni, hogy enterrel is működjün.<br>
 
+<br>Menü ablak:<br>
+![Képernyőterv](Screenshot03.png)
+<br>Ellátva a 2 játéklehetőség kiválasztását szolgáló gombbal<br>
 
 ## 6. Forgatókönyv
 Futási időben kettő szereplő figyelhető meg.
