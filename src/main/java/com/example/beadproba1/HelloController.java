@@ -143,8 +143,8 @@ public class HelloController {
         massageLabel.setText("");
         massageLabel.setTextFill(Color.RED);
         nameField.clear();
-        startvbox.setVisible(true);
-        startvbox.setManaged(true);
+        selectorvbox.setVisible(true);
+        selectorvbox.setManaged(true);
         errorLabel.setText("");
         gamevbox.setVisible(false);
         restart.setVisible(false);
