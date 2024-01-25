@@ -29,6 +29,15 @@
 | Teszt #04 | Nem megfelelő adat beírása a felhasználó input mezejébe | Hiba üzenet tájokaztatja a felhasználót arról hogy a megadott értékek nem helyesek | Hiba üzenet tájokaztatja a felhasználót arról hogy a megadott értékek nem helyesek | Nem találtam problémát. |
 
 
+**Tesztelő:** Sipos Máté
+
+**Tesztelés dátuma:** 2024.Január.25.
+
+| Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
+|-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
+| Teszt #01 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 
 
 
