@@ -31,7 +31,7 @@
 
 **Tesztelő:** Sipos Máté
 
-**Tesztelés dátuma:** 2024.Január.25.
+**Tesztelés dátuma:** 2024.Január.24.
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
@@ -42,7 +42,7 @@
 
 **Tesztelő:** Ádám Zsombor
 
-**Tesztelés dátuma:** 2024.Január.25.
+**Tesztelés dátuma:** 2024.Január.24.
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
@@ -50,3 +50,13 @@
 | Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 | Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
 
+
+**Tesztelő:** Sipos Máté, Ádám Zsombor
+
+**Tesztelés dátuma:** 2024.Január.25.
+
+| Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
+|-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
+| Teszt #01 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #02 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
+| Teszt #03 | xxxxxxxxxx | xxxxxxxxxxx |  xxxxxxxxxxxxxx| xxxxxxxxxxxx |
