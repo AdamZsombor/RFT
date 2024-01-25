@@ -24,6 +24,8 @@ Java környezeten való működés.
 ### 4.1 Rendszerszereplők:
 Felhasználó
 ### 4.2 Rendszerhasználati esetek és lefutásaik:
+Alap játékmód ahol 1-100 ig történő tartományban játszik a játékos
+
 Feltöltheti a kívánt tartományt.
 
 Tippelhet számokat.
